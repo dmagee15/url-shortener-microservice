@@ -1,2 +1,1 @@
-# url-shortener-microservice
-FreeCodeCamp url shortener microservice project
+# Backend Challenges boilerplate - package.json
