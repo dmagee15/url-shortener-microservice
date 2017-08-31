@@ -2,7 +2,7 @@
 <html>
 
    <head>
-      <title>Backend Challenges | Free Code Camp</title>
+      <title>URL Shortener</title>
       <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
       <link href="/public/style.css" rel="stylesheet" type="text/css">
@@ -10,8 +10,32 @@
 
    <body>
       <div class="container">
-         <h1>Manage Node.js projects and npm packages using package.json</h1>
-         <h3>Part 1 of Free Code Camp Backend Challenges</h3>
+         <h1>URL Shortener</h1>
+         <h3>User Stories</h3>
+        <div style="text-align:left;margin-left:300px">
+        <p>1. I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</p>
+        <p>2. If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</p>
+        <p>3. When I visit that shortened URL, it will redirect me to my original link.</p>
+        </div>
+        <br>
+        <p>The API endpoint is the [base url]/api/[your url to shorten]</p>
+        <p>The API endpoint for the resulting shortened url will be [base url]/[# code]</p>
+        <br>
+        <h3>
+          Example Usage
+        </h3>
+        <p>
+          [base url]/api/www.google.com
+        </p>
+        <h3>
+          Example Output
+        </h3>
+        <p>
+          {"url":"www.google.com","shorturl":1}
+        </p>
+        <p>
+          Short url: [base url]/1
+        </p>
       </div>
    </body>
 

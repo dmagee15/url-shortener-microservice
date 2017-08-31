@@ -8,7 +8,7 @@ var smallurl = require('./smallurl');
 var app = express();
 var index;
 
-mongoose.connect('mongodb://test:test@ds161483.mlab.com:61483/shorturls');
+mongoose.connect('mongodb://'+process.env.SECRET+'@ds161483.mlab.com:61483/shorturls');
 
 app.use('/public', express.static(process.cwd() + '/public'));
   
